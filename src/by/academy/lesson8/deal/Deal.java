@@ -1,6 +1,7 @@
 package by.academy.lesson8.deal;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -42,6 +43,36 @@ public class Deal {
     public void setDealDate(LocalDate dealDate) {
         this.dealDate = dealDate;
     }
+
+    private void transferMoney(User seller, User buyer) {
+    }
+
+    private void printBill() {
+    }
+
+    public double calculateFullPrice() {
+        if (products == null) {
+            return 0;
+        }
+        double result = 0;
+        for (Product p : products) {
+            result += p.calculatePrice();
+        }
+        return result;
+    }
+
+    public void submit() {
+        double price = calculateFullPrice();
+        if (buyer.hasEnoughMoney(price)) {
+            printBill();
+            transferMoney(seller, buyer);
+            setDealDate(LocalDate.now());
+            System.out.println("Сделка совершена");
+        } else {
+            System.out.println("У покупателя нет столько денег: " + price);
+        }
+    }
+
 
     @Override
     public boolean equals(Object o) {

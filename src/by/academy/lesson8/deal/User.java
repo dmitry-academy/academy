@@ -29,9 +29,8 @@ public class User {
         return money;
     }
 
-    public void setMoney(double money) {
-        this.money = money;
-    }
+    public void setMoney(double money)
+
 
     @Override
     public boolean equals(Object o) {
@@ -54,5 +53,9 @@ public class User {
         temp = Double.doubleToLongBits(money);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
+    }
+
+    public boolean hasEnoughMoney(double price) {
+        return money >= price;
     }
 }

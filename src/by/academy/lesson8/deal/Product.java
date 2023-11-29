@@ -15,6 +15,20 @@ public class Product {
         this.name = name;
     }
 
+    public double calculatePrice() {
+        return quantity * price * discount();
+    }
+
+    public double discount() {
+        if (quantity < 10) {
+            return 1;
+        } else if (quantity < 20) {
+            return 0.8;
+        } else {
+            return 0.75;
+        }
+    }
+
     public double getPrice() {
         return price;
     }
