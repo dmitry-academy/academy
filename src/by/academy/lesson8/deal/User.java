@@ -29,7 +29,9 @@ public class User {
         return money;
     }
 
-    public void setMoney(double money)
+    public void setMoney(double money) {
+        this.money = money;
+    }
 
 
     @Override
