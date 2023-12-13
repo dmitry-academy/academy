@@ -4,6 +4,11 @@ import by.academy.lesson8.classes.Box;
 
 public class R {
     Box getInstance() {
-        return new Box();
+        return new Box() {
+            @Override
+            public double discount() {
+                return 0;
+            }
+        };
     }
 }

@@ -24,4 +24,9 @@ public class HeavyBox extends Box {
         super(weight, height, depth);
     }
 
+    @Override
+    public final double discount() {
+        return 1;
+    }
+
 }

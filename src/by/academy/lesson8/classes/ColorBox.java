@@ -17,6 +17,11 @@ public class ColorBox extends Box {
         this.color = color;
     }
 
+    @Override
+    public double discount() {
+        return 1;
+    }
+
     public String getColor() {
         return color;
     }

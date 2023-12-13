@@ -1,6 +1,6 @@
 package by.academy.lesson8.classes;
 
-public class Box {
+public abstract class Box {
 
     double height;
     double width;
@@ -28,8 +28,14 @@ public class Box {
         this.width = width;
     }
 
+    public abstract double discount();
+
     public double calcVolume() {
         return width * height * depth;
+    }
+
+    private void privateMethod() {
+        System.out.println("alalal ia private");
     }
 
     public void setHeight(String height) {
