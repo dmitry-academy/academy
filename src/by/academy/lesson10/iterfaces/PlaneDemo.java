@@ -21,5 +21,7 @@ public class PlaneDemo {
         rocket.fly();
         rocket.rocket();
         rocket.test();
+
+        Flyable.doSomething();
     }
 }
