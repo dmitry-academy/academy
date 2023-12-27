@@ -1,4 +1,4 @@
-package by.academy;
+package by.academy.lesson12;
 
 import by.academy.lesson8.deal.Product;
 
