@@ -1,8 +1,9 @@
 package by.academy.lesson8.deal;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Product {
+public class Product implements Serializable {
     String name;
     double price;
     double quantity;

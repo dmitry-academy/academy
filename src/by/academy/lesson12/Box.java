@@ -1,8 +1,10 @@
 package by.academy.lesson12;
 
-public class Box<T> {
+public class Box<T, V, K > {
 
     private T[] items;
+    private V value;
+    private K key;
     private int current = 0;
 
     public Box() {
