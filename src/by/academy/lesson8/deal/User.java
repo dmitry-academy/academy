@@ -9,6 +9,9 @@ public class User {
     LocalDate dateOfBirth;
     double money;
 
+    public User(){
+        super();
+    }
     public String getName() {
         return name;
     }

@@ -7,7 +7,7 @@ import java.util.Locale;
 public class FormatLocalDateTimeDemo2 {
 	public static void main(String[] args) {
 		LocalDateTime dateTime = LocalDateTime.of(2020, 1, 1, 10, 0, 0);
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM, dd, yyyy HH:mm:ss", Locale.US);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM, dd, yyyy HH:mm:ss", Locale.US);
 		System.out.println(dateTime);
 
 		System.out.println(dateTime.format(formatter));

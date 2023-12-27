@@ -4,7 +4,7 @@ import java.time.Period;
 
 public class PeriodDemo5 {
     public static void main(String[] args) {
-        Period period2d = Period.ofDays(2);
+        Period period2d = Period.of(2, 9, 14);
         Period period8d = period2d.withDays(8);
         Period period2y1m2d = period2d.withYears(2).withMonths(1);
 

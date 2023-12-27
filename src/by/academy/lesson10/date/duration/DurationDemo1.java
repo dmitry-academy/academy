@@ -22,5 +22,6 @@ public class DurationDemo1 {
 		System.out.println("oneSecondFromMillis: " + oneSecondFromMillis);
 		System.out.println("oneSecondFromNanos: " + oneSecondFromNanos);
 		System.out.println("oneSecond: " + oneSecond);
+
 	}
 }

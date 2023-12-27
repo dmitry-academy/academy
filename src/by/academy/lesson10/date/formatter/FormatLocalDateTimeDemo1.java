@@ -15,5 +15,12 @@ public class FormatLocalDateTimeDemo1 {
         LocalDate localDate = LocalDate.parse("June 5, 2018", formatter2);
         System.out.println(localDate);
 
+        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate localDate3 = LocalDate.parse("01-01-2023", formatter3);
+        System.out.println(localDate3);
+
+        DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate localDate4 = LocalDate.parse("20/12/2023", formatter4);
+        System.out.println(localDate4);
     }
 }

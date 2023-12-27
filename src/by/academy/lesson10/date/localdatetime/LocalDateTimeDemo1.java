@@ -23,5 +23,9 @@ public class LocalDateTimeDemo1 {
         System.out.println(date3);
         System.out.println(date4);
         System.out.println(date5);
+
+        LocalDateTime test = LocalDateTime.of(date, time);
+
+        System.out.println(test);
     }
 }

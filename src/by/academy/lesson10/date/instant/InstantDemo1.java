@@ -6,6 +6,7 @@ import java.time.temporal.ChronoField;
 public class InstantDemo1 {
 	public static void main(String[] args) {
 		Instant now = Instant.now();
+		System.out.println(now);
 
 		Instant instant = now.with(ChronoField.NANO_OF_SECOND, 10);
 		// Устанавливаем секунды
