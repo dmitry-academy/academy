@@ -13,8 +13,8 @@ public class User {
     }
 
     public void createQuery() {
-        Query query = new Query();
-        query.printToLog();
+//        Query query = new Query();
+//        query.printToLog();
     }
 
     static class Query {
