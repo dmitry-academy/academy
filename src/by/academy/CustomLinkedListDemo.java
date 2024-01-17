@@ -1,5 +1,7 @@
 package by.academy;
 
+import java.util.Iterator;
+
 public class CustomLinkedListDemo {
     public static void main(String[] args) {
         CustomLinkedList<Integer> list = new CustomLinkedList<>();
@@ -9,7 +11,13 @@ public class CustomLinkedListDemo {
         list.add(400);
         list.add(500);
 
+        Iterator<Integer> iterator = list.iterator();
 
+        System.out.println("Iterator for each");
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("---------------");
         list.print();
         System.out.println("Size: " + list.getSize());
 //

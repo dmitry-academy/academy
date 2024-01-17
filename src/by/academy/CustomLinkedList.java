@@ -1,6 +1,8 @@
 package by.academy;
 
-public class CustomLinkedList<T> {
+import java.util.Iterator;
+
+public class CustomLinkedList<T> implements Iterable<T> {
 
     private Node<T> head;
     private Node<T> tail;
@@ -120,6 +122,26 @@ public class CustomLinkedList<T> {
     public T get(int index) {
         Node<T> node = getNode(index);
         return node != null ? node.value : null;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new Iterator<T>() {
+
+            private Node<T> current = head;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public T next() {
+                Node<T> node = current;
+                current = current.next;
+                return node.value;
+            }
+        };
     }
 
 
