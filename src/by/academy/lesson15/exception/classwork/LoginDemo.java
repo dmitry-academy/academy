@@ -1,5 +1,7 @@
 package by.academy.lesson15.exception.classwork;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,7 +11,25 @@ public class LoginDemo {
     private static Pattern VALIDATION = Pattern.compile("\\w{3,20}");
 
     public static void main(String[] args) {
-        enterCredentials();
+//        enterCredentials();
+
+        login("user", "password");
+    }
+
+    public static void login(String username, String password) {
+
+        // check nulls
+
+        Map<String, String> users = new HashMap<>();
+        users.put("1", "2");
+
+        if (users.containsKey(username) && password.equals(users.get(username))) {
+            System.out.println("Вы вошли в систему");
+        } else {
+
+        }
+
+
     }
 
     public static boolean enterCredentials() {
