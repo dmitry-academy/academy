@@ -44,4 +44,9 @@ public class Cat {
     public String getNickname() {
         return nickname;
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("alalala memory was cleared");
+    }
 }
