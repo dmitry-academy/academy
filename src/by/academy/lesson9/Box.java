@@ -12,8 +12,9 @@ public class Box {
 		depth = 10;
 	}
 
-	public void test() {
+	public String test() {
 		print();
+		return "dsa";
 	}
 
 	public void print() {
